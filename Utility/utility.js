@@ -502,7 +502,9 @@ module.exports =
                     if (store1.length == store2.length) {
                         var k = 0;
                         while (k < store1.length) {
+                            
                             for (let i = k; i < store1.length; i++) {
+
                                 if (store1[k] != store2[i]) {
                                     return false;
                                 }
@@ -532,7 +534,7 @@ module.exports =
         */
         primenumber(n) {
             try {
-                if (n == 0 || n == 1) {
+                if (!Number.isInteger(n) || (n == 0) || n == 1) {
                     return false;
                 } else {
                     for (let i = 2; i < n; i++) {
@@ -566,6 +568,7 @@ module.exports =
                 var rem = 0;
                 //loop untill num is not equal to zero
                 while (number != 0) {
+                    
                     var r = number % 10;
                     //take reminder of the number 
                     rem = rem * 10 + r;
@@ -703,10 +706,14 @@ module.exports =
         * @function    :                     
         */
         payment(p, y, r) {
-            var n = 12 * y;
-            var r1 = r / (12 * 100);
-            var res = (p * r1) / (1 - Math.pow(1 + r1, (-n)));
-            console.log("Payment is : " + res);
+            try {
+                var n = 12 * y;
+                var r1 = r / (12 * 100);
+                var res = (p * r1) / (1 - Math.pow(1 + r1, (-n)));
+                console.log("Payment is : " + res);
+            } catch (error) {
+
+            }
         },
         /* ********Convrting decimal to binary number and binary number display base 2***********/
         /* Convert to Binary
@@ -716,7 +723,7 @@ module.exports =
         * @descriptipn :Declaring the function and passing the userinput as argument.
         * @function    :Diplayname takes the userinput and print it with some sentence.                    
         */
-        tobinary(num) {
+        binary(num) {
             var str = num.toString();
             var bin = (+str).toString(2);
             var s = " ";
@@ -801,12 +808,14 @@ module.exports =
                 for (let index = 0; index < 1000; index++) {
                     if (this.primenumber(index)) {
                         arr.push(index);
-                        
+
                     }
 
-                }        
+                }
                 for (let i = 0; i < arr.length; i++) {
+
                     for (let j = i + 1; j < arr.length; j++) {
+                        
                         if (this.anagram(arr[i].toString(), arr[j].toString())) {
                             if (this.primenumber(arr[i], arr[j])) {
                                 console.log(arr[i], "  ", arr[j]);
@@ -855,19 +864,22 @@ module.exports =
         *  @function   : Diplayname takes the userinput and print it with some sentence.                    
         */
         sortbubble(arr) {
-            var a;
-            for (let i = 0; i < arr.length; i++) {
-                for (let j = 0; j < (arr.length - i - 1); j++) {
-                    if (arr[j] > arr[j + 1]) {
-                        a = arr[j];
-                        arr[j] = arr[j + 1];
+            try {
 
-
-                        arr[j + 1] = a;
+                var a;
+                for (let i = 0; i < arr.length; i++) {
+                    for (let j = 0; j < (arr.length - i - 1); j++) {
+                        if (arr[j] > arr[j + 1]) {
+                            a = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = a;
+                        }
                     }
                 }
+                return arr;
+            } catch (error) {
+
             }
-            return arr;
         },
 
         /************************************ Find Number **********************************/
@@ -883,8 +895,6 @@ module.exports =
         */
         findNumber(low, high, readline) {
             try {
-
-
                 var mid = low + Math.floor((high - low) / 2)
                 console.log(mid)
                 if (low < high) {
@@ -911,8 +921,8 @@ module.exports =
 
 
         /* ******************************* file call function **********************************   
-           *fs is a pre-defined keyword used to read a file 
-           * writeFile is used to write in a file
+           *Purpose      :fs is a pre-defined keyword used to read a file 
+           *               writeFile is used to write in a file
            */
         fileCall(path) {
             var fileStream = require('fs');
@@ -930,5 +940,9 @@ module.exports =
 
             });
         },
+
+        /*********************************Data_Structures******************************************** */
+
+
     }
 

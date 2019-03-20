@@ -14,11 +14,11 @@
  *  @since          : 14-03-2019
  *
  ******************************************************************************/
-var mer=require('../Utility/utility');
-const readline=require('readline-sync');
+var mer = require('../Utility/utility');
+const readline = require('readline-sync');
 var num = readline.questionInt("Enter the number of elements you want to enter:");
 console.log("Enter " + num + " elements: ");
-var arr=[];
-arr=mer.createArray(num);
-arr=mer.mergesort(arr);
+var arr = [];
+arr = mer.createArray(num);
+arr = mer.mergesort(arr);
 console.log(arr);
