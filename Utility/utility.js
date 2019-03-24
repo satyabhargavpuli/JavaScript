@@ -197,7 +197,7 @@ module.exports =
         *times he/she wins and the number of bets he/she makes. will run the experiment N times, 
         *averages the results, and prints them out.
         *
-        * @description : Play till the gambler is broke or has won
+        * @description : Play till the gambler till he loss or has won the goal
         ***********************************************************************************              
         */
         /* gambler(stake,goal,number){
@@ -502,7 +502,7 @@ module.exports =
                     if (store1.length == store2.length) {
                         var k = 0;
                         while (k < store1.length) {
-                            
+
                             for (let i = k; i < store1.length; i++) {
 
                                 if (store1[k] != store2[i]) {
@@ -568,7 +568,7 @@ module.exports =
                 var rem = 0;
                 //loop untill num is not equal to zero
                 while (number != 0) {
-                    
+
                     var r = number % 10;
                     //take reminder of the number 
                     rem = rem * 10 + r;
@@ -746,53 +746,7 @@ module.exports =
 
         },
 
-        /* ******************************** mergesort algorithm**********************************/
-        /* mergesort
-       * Purpose      : It is a mergesort form sorting.it is going to sort a numbers or variable in
-                        the ascending and descending order.Taken input from the user.It is going to check the
-                        next element.If it is bigger than this then it should be swapped.
-       *
-       *  @descriptipn: Declaring the function and passing the userinput as argument.
-       *  @function   : Diplayname takes the userinput and print it with some sentence.                    
-       */
-        mergesort(arr) {
-            if (arr.length === 1) {
-                return arr;
-            }
-            const m = Math.floor(arr.length / 2);
-            const left = arr.slice(0, m);
-            const right = arr.slice(m);
-            return this.merge(
-                this.mergesort(left),
-                this.mergesort(right)
-            );
 
-        },
-
-        merge(left, right) {
-            let result = [];
-            let i = 0;
-            let j = 0;
-
-            while (i < left.length && j < right.length) {
-                if (left[i] < right[j]) {
-                    result.push(left[i]);
-                    i++;
-                } else {
-                    result.push(right[j]);
-                    j++;
-                }
-            }
-            return result.concat(left.slice(i)).concat(right.slice(j));
-        },
-        /* ***************************** create array function *********************************/
-
-        createArray(num) {
-            var arr = [];
-            for (let index = 0; index < num; index++)
-                arr[index] = readline.questionInt("Enter the element ");
-            return arr;
-        },
 
         /* ************************* It is anagrampalindrome or not ****************************/
         /* Is Prime2String
@@ -815,7 +769,7 @@ module.exports =
                 for (let i = 0; i < arr.length; i++) {
 
                     for (let j = i + 1; j < arr.length; j++) {
-                        
+
                         if (this.anagram(arr[i].toString(), arr[j].toString())) {
                             if (this.primenumber(arr[i], arr[j])) {
                                 console.log(arr[i], "  ", arr[j]);
@@ -829,8 +783,18 @@ module.exports =
 
             }
         },
+
+        /* ***************************** create array function *********************************/
+
+        createArray(num) {
+            var arr = [];
+            for (let index = 0; index < num; index++)
+                arr[index] = readline.questionInt("Enter the element ");
+            return arr;
+        },
+
         /* ***************************** insertionsort algorithm ********************************/
-        /* insertion sort
+        /* 
         * Purpose      : It is a insertion sort form sorting.it is going to sort a numbers or variable in
         *                the ascending and descending order.Taken input from the user.It is going 
         *                to check the next element.If it is bigger than this then it should be 
@@ -881,7 +845,45 @@ module.exports =
 
             }
         },
+        /* ******************************** mergesort algorithm**********************************/
+        /* mergesort
+       * Purpose      : It is a mergesort form sorting.it is going to sort a numbers or variable in
+                        the ascending and descending order.Taken input from the user.It is going to check the
+                        next element.If it is bigger than this then it should be swapped.
+       *
+       *  @descriptipn: Declaring the function and passing the userinput as argument.
+       *  @function   : Diplayname takes the userinput and print it with some sentence.                    
+       */
+        mergesort(arr) {
+            if (arr.length === 1) {
+                return arr;
+            }
+            const m = Math.floor(arr.length / 2);
+            const left = arr.slice(0, m);
+            const right = arr.slice(m);
+            return this.merge(
+                this.mergesort(left),
+                this.mergesort(right)
+            );
 
+        },
+
+        merge(left, right) {
+            let result = [];
+            let i = 0;
+            let j = 0;
+
+            while (i < left.length && j < right.length) {
+                if (left[i] < right[j]) {
+                    result.push(left[i]);
+                    i++;
+                } else {
+                    result.push(right[j]);
+                    j++;
+                }
+            }
+            return result.concat(left.slice(i)).concat(right.slice(j));
+        },
         /************************************ Find Number **********************************/
         /* To find a number 
         ----------------------
