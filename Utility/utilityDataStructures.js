@@ -1,6 +1,6 @@
 /***********************************************************
  *
- * Execution     :Default node      cmd>node filename.js
+ * Execution     :Default node      cmd>node utilityDataStructures.js
  * Purpose       :To deploy all the business logic.
  * 
  *@description 

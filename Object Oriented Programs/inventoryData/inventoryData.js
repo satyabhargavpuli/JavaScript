@@ -11,7 +11,7 @@
  *
  *  @file           : inventoryData.js
  *  @overview       : To calculate the total cost of each object in inventory for given quantity.
- *  @author         : satya bhargav         <satyabhargav.puli@gmail.com>
+ *  @author         : satya bhargav   <satyabhargav.puli@gmail.com>
  *  @version        : 1.0
  *  @since          : 07/02/2019
  *

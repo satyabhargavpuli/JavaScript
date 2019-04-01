@@ -75,22 +75,22 @@ function deckCards() {
         var data = player1.printList()
         var arr = data.split(" ")
         console.log(" unsorted 1 :" + "  [  " + arr + "  ]  ");
-        var arr10 = ut.bubble(arr);
+        var arr10 = ut.sortbubble(arr);
         console.log("player 1 :" + "  [  " + arr10 + "  ]  ");
         var data1 = player2.printList()
         var arr1 = data1.split(" ")
         console.log(" unsorted 2 :" + "  [  " + arr1 + "  ]  ");
-        var arr11 = ut.bubble(arr1)
+        var arr11 = ut.sortbubble(arr1)
         console.log("player 2 :" + "  [  " + arr11 + "  ]  ")
         var data2 = player3.printList()
         var arr2 = data2.split(" ")
         console.log(" unsorted 3 :" + "  [  " + arr2 + "  ]  ");
-        var arr12 = ut.bubble(arr2)
+        var arr12 = ut.sortbubble(arr2)
         console.log("player 3 :" + "  [  " + arr12 + "  ]  ")
         var data3 = player4.printList()
         var arr3 = data3.split(" ")
         console.log(" unsorted 4 :" + "  [  " + arr3 + "  ]  ");
-        var arr13 = ut.bubble(arr3)
+        var arr13 = ut.sortbubble(arr3)
         console.log("player 4 :" + "  [  " + arr13 + "  ]  ");
     } catch (err) {
         console.log(err.message);
