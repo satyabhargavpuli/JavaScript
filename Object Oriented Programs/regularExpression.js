@@ -12,9 +12,9 @@
  *
  *  @file           : regularExpression.js
  *  @overview       : To reaplce name, fullname, mobile number using regex and to update current date.
- *  @author         :   satya bhargav         <satyabhargav.puli@gmail.com>
+ *  @author         :   satya bhargav     <satyabhargav.puli@gmail.com>
  *  @version        : 1.0
- *  @since          : 7/02/2019
+ *  @since          : 29/03/2019
  *
  ******************************************************************************/
 var access = require('../Utility/utilityOops');

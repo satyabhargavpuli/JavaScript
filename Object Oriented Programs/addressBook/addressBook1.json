@@ -1,1 +1,39 @@
-{"Person":[{"Name":"satya","LastName":"bhargav","Address":{"Street":"208","City":"Hyderabad","State":"Telengana","Nationality":"Indian","Zip":"500049","PhoneNum":"9908601717"}},{"Name":"Ramesh","LastName":"samana","Address":{"Street":"162","City":"Hyderabad","State":"Telengana","Nationality":"Indian","Zip":"500049","PhoneNum":"8522844030"}},{"Name":"kiran","LastName":"katnam","Address":{"Street":"","City":"bhimavaram","State":"andra pradesh","Zip":"543201","PhoneNum":"8522866050"}}]}
+{
+    "Person": [
+        {
+            "Name": "satya",
+            "LastName": "bhargav",
+            "Address": {
+                "Street": "208",
+                "City": "Hyderabad",
+                "State": "Telengana",
+                "Nationality": "Indian",
+                "Zip": "500049",
+                "PhoneNum": "9908601717"
+            }
+        },
+        {
+            "Name": "Ramesh",
+            "LastName": "samana",
+            "Address": {
+                "Street": "162",
+                "City": "Hyderabad",
+                "State": "Telengana",
+                "Nationality": "Indian",
+                "Zip": "500049",
+                "PhoneNum": "8522844030"
+            }
+        },
+        {
+            "Name": "kiran",
+            "LastName": "katnam",
+            "Address": {
+                "Street": "",
+                "City": "bhimavaram",
+                "State": "andra pradesh",
+                "Zip": "543201",
+                "PhoneNum": "8522866050"
+            }
+        }
+    ]
+}
