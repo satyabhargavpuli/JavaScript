@@ -16,7 +16,7 @@
  *  @since          : 27/03/2019
  *
  ************************************************************************************************/
-var utility = require('./utilityStock')
+var utility = require('../stockReport/utilityStock')
 var read = require('readline-sync');
 var fileread = require('fs')
 var data = fileread.readFileSync('stockReport.json', 'utf8');

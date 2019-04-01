@@ -20,7 +20,7 @@ class companySharesStack {
         this.stock = new access.StackLinkedList
         try {
             var data = JSON.parse(
-                file.readFileSync("/home/admin1/Anush/javaScript/Object Oriented Programs/stockAccountStack/customer1.json"))
+                file.readFileSync("customer1.json"))
             for (let j = 0; j < data.company.length; j++) {
                 this.stock.push(data.company[j]);
             }
@@ -86,7 +86,7 @@ class companySharesStack {
     writeStock() {
         try {
             file.writeFileSync(
-                "/home/admin1/Anush/javaScript/Object Oriented Programs/stockAccountStack/customer1.json",
+                "customer1.json",
                 JSON.stringify(this.stock.printShares()),
                 function (err) {
                     if (err) {

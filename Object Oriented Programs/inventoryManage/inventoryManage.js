@@ -26,6 +26,14 @@ function inventoryManage() {
         /**
          * While loop to loop over the menu to choose by user.
          */
+        console.log();
+        
+        console.log("*******************Welcome to inventory management system*******************");
+        console.log();
+        
+        console.log("Enter the number to choose the stock operation");
+        
+        
         here: while (ch != 5) {
             console.log("Press 1 to add :");
             console.log("Press 2 to remove :");
