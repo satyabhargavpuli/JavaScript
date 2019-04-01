@@ -15,10 +15,10 @@
 // ********************************* Required functions *******************************/
 
 
-var take=require('util');
-module.exports={
-// ******************************* prime numbers between range ******************************/
-isPrimes(initial, final) {
+var take = require('util');
+module.exports = {
+  // ******************************* prime numbers between range ******************************/
+  isPrimes(initial, final) {
     try {
       var flag = 0;
       k = 0;
@@ -42,7 +42,7 @@ isPrimes(initial, final) {
       console.log(error.message);
     }
   },
-// ********************************* dArray function *********************************/
+  // ********************************* dArray function *********************************/
   dArray() {
     try {
       var arr = [];
@@ -63,9 +63,9 @@ isPrimes(initial, final) {
           arr.push(i);
         }
       }
-        var range = 100,
+      var range = 100,
         k = 0;
-        for (let i = 0; i < arr.length; i++) {
+      for (let i = 0; i < arr.length; i++) {
         for (let j = i + 1; j < arr.length; j++) {
           if (this.isAnagram(arr[i], arr[j])) {
             if (arr[i] <= range) {
@@ -99,54 +99,54 @@ isPrimes(initial, final) {
     } catch (error) {
       console.log(error.message);
     }
-    },
-// *********************************  check prime or not *******************************/
-    isPrime(n){
-    if(n==0||n==1){
-        return false;
-    }else{
-        for(let i=2;i<n;i++){
-            if(n%i==0){
-                return false;
-            }
+  },
+  // *********************************  check prime or not *******************************/
+  isPrime(n) {
+    if (n == 0 || n == 1) {
+      return false;
+    } else {
+      for (let i = 2; i < n; i++) {
+        if (n % i == 0) {
+          return false;
         }
-        return true;
+      }
+      return true;
     }
-    },
-// ********************************* Check anagram or not *******************************/ 
-    isAnagram(word1, word2) {
-        try {
-          var format = /[a-zA-Z0-9]/;
-          var result;
-          if (format.test(word1) && format.test(word2)) {
-            if (word1.length !== word2.length) {
-              result = false;
-            }
-            var sortWord1 = word1
-              .toString()
-              .split("")
-              .sort()
-              .join("");
-            var sortWord2 = word2
-              .toString()
-              .split("")
-              .sort()
-              .join("");
-            
-            result = sortWord1 === sortWord2;
-            if (result == true) {
-              return true;
-            } else {
-              return false;
-            }
-          } else {
-            console.log("Enter only letters or alphabets");
-          }
-        } catch (error) {
-          console.log(error.message);
+  },
+  // ********************************* Check anagram or not *******************************/ 
+  isAnagram(word1, word2) {
+    try {
+      var format = /[a-zA-Z0-9]/;
+      var result;
+      if (format.test(word1) && format.test(word2)) {
+        if (word1.length !== word2.length) {
+          result = false;
         }
-      },
+        var sortWord1 = word1
+          .toString()
+          .split("")
+          .sort()
+          .join("");
+        var sortWord2 = word2
+          .toString()
+          .split("")
+          .sort()
+          .join("");
 
-    
+        result = sortWord1 === sortWord2;
+        if (result == true) {
+          return true;
+        } else {
+          return false;
+        }
+      } else {
+        console.log("Enter only letters or alphabets");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  },
+
+
 }
 // *************************************** End ***************************************/

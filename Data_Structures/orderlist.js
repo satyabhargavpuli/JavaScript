@@ -27,7 +27,7 @@ try {
     for (let i = 0; i < arr1.length; i++) {
       arr[i] = parseInt(arr1[i]);
      }
-    access.bubblesort(arr);
+    access.sortbubble(arr);
     var linkedList = new accessDs.LinkedList1();
     for (let i = 0; i < arr.length; i++) {
       linkedList.add(arr[i]);

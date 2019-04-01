@@ -38,15 +38,18 @@ function calender() {
      }
     take.print(a[month-1]+" "+year);
     console.log();
-    for (var i = 0; i < week.length; i++) {
+    for (var i = 0; i < week.length; i++)
+     {
         take.print(week[i] + "  ");
      }
     console.log();
     for (var i = 0; i < (day * 5); i++) {
+
         take.print(" ");
      }
 
     for (var i = 1; i <= dates[month]; i++) {
+
         if (i < 10) {
             take.print(" " + i + "   ");
          }
@@ -61,6 +64,6 @@ function calender() {
     console.log("\n\n");
 }
 /**
- * function calls
+ * function call
  */
 calender();

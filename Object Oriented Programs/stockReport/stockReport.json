@@ -1,0 +1,24 @@
+{
+    "Stock": [
+        {
+            "stockName": "AxisBank",
+            "shares": 180,
+            "price": 250
+        },
+        {
+            "stockName": "SouthIndiaBank",
+            "shares": 80,
+            "price": 60
+        },
+        {
+            "stockName": "BOI",
+            "shares": 150,
+            "price": 110
+        },
+        {
+            "stockName": "SBI",
+            "shares": 200,
+            "price": 190
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "Rice": [
+        {
+            "Ricename": "Basumathi",
+            "Weight": 25,
+            "Price": 90
+        },
+        {
+            "Ricename": "SteamRice",
+            "Weight": 30,
+            "Price": 52
+        },
+        {
+            "Ricename": "Bulletrice",
+            "Weight": 40,
+            "Price": 66
+        }
+    ],
+    "Wheat": [
+        {
+            "Wheatname": "Ashirvad",
+            "Weight": 10,
+            "Price": 32
+        },
+        {
+            "Wheatname": "Patanjali",
+            "Weight": 12,
+            "Price": 30
+        },
+        {
+            "Wheatname": "Samrat India",
+            "Weight": 18,
+            "Price": 38
+        }
+    ],
+    "Pulses": [
+        {
+            "Pulsesname": "Moong",
+            "Weight": 8,
+            "Price": 130
+        },
+        {
+            "Pulsesname": "Chana",
+            "Weight": 6,
+            "Price": 96
+        },
+        {
+            "Pulsesname": "Rajma",
+            "Weight": 4,
+            "Price": 200
+        }
+    ]
+}

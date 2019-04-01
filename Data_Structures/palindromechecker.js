@@ -41,6 +41,7 @@ function palindromeCheck() {
       deque.addFront(arr[i]);
      }
     var string1 = "";
+    debugger;
     for (let i = 0; i < arr.length; i++) {
       string1 = string1 + "" + deque.removeFront();
      }

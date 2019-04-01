@@ -57,10 +57,12 @@ function calender() {
             take.print(" " + rstk.pop());
          }
         console.log();
-        for (let j = 0; j < (answer * 4 + 2); j++) {
+        for (let j = 0; j < (answer * 4 + 2); j++)
+         {
             take.print(" ");
          }
-        for (let j = 1; j <= dates[month]; j++) {
+        for (let j = 1; j <= dates[month]; j++)
+         {
             var ch = rstk1.pop();
             if (ch < 10)
             take.print(ch, "   ");

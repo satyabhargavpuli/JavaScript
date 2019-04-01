@@ -1,0 +1,93 @@
+{
+    "Doctor":[
+        {
+     "name": "Dr.Rangith",
+      "id" : "opl234",
+      "specialization" : "cardiology",
+      "availability"   :"am"
+
+        },
+        {
+            "name":"Dr.Mahesh",
+            "id"  :"krl1521",
+            "specialization" :"General",
+            "availability"   : "pm"
+        },
+        {
+            "name":"Dr.Radha",
+            "id" : "ople295",
+            "specialization":"Thoracic",
+            "availability"  : "both"
+        },
+        {
+            "name":"Dr.sneha",
+            "id" : "chn2341",
+            "specialization":"Gynecology",
+            "availability":"am"
+        },
+        {
+            "name":"Dr.HarunHussain",
+            "id":"opl2251",
+            "specialization":"Orthopaedic",
+            "availability":"both"
+        }
+    ],
+    "patient":[
+        {
+            "name":"bhargav",
+            "id":463,
+            "age":24,
+            "mobileno":"9908601717",
+            "appointment":"Dr.Rangith",
+            "AppOnTheDayOf":12
+        },
+        {
+            "name":"ramesh",
+            "id":528,
+            "age":25,
+            "mobileno":"8522844030",
+            "appointment":"Dr.Mahesh",
+            "AppOnTheDayOf":16
+        },
+        {
+            "name":"ramu",
+            "id":612,
+            "age":24,
+            "mobileno":"8645175821",
+            "appointment":"Dr.sneha",
+            "AppOnTheDayOf":15
+        },
+        {
+            "name":"nani",
+            "id":241,
+            "age":25,
+            "mobileno":"8577814232",
+            "appointment":"Dr.Mahesh",
+            "AppOnTheDayOf":24
+        },
+        {
+            "name":"vasu",
+            "id":501,
+            "age":25,
+            "mobileno":"8522844030",
+            "appointment":"Dr.Radha",
+            "AppOnTheDayOf":16
+        },
+        {
+            "name":"chintu",
+            "id":528,
+            "age":25,
+            "mobileno":"9522944050",
+            "appointment":"Dr.HarunHussain",
+            "AppOnTheDayOf":12
+        },
+        {
+            "name":"ramesh",
+            "id":528,
+            "age":25,
+            "mobileno":"6688241321",
+            "appointment":"Dr.sneha",
+            "AppOnTheDayOf":11
+        }
+    ]
+}

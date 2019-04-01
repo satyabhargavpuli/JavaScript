@@ -1,0 +1,34 @@
+{
+    "Stock": [
+        {
+            "shareName": "XEROX",
+            "noOfshares": 150,
+            "price": 260
+        },
+        {
+            "shareName": "LCH",
+            "noOfshares": 190,
+            "price": 120
+        },
+        {
+            "shareName": "CTS",
+            "noOfshares": 250,
+            "price": 300
+        },
+        {
+            "shareName": "zam",
+            "noOfshares": 200,
+            "price": 100
+        },
+        {
+            "shareName": "dsa",
+            "noOfshares": 100,
+            "price": 200
+        },
+        {
+            "shareName": "abc",
+            "noOfshares": 122,
+            "price": 230
+        }
+    ]
+}

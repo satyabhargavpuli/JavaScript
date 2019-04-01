@@ -807,10 +807,10 @@ module.exports =
             var a;
             for (let i = 0; i < arr.length; i++) {
                 for (let j = i; j > 0; j--) {
-                    if (arr[j] < arr[j - 1]) {
-                        a = arr[j];
-                        arr[j] = arr[j - 1];
-                        arr[j - 1] = a;
+                    if (arr[j-1] > arr[j]) {
+                        a = arr[j-1];
+                        arr[j - 1] = arr[j];
+                        arr[j] = a;
                     }
                 }
             }
@@ -830,7 +830,7 @@ module.exports =
         sortbubble(arr) {
             try {
 
-                var a;
+                var a;//taling a temp variable
                 for (let i = 0; i < arr.length; i++) {
                     for (let j = 0; j < (arr.length - i - 1); j++) {
                         if (arr[j] > arr[j + 1]) {

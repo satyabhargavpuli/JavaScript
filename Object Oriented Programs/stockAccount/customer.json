@@ -1,0 +1,66 @@
+{
+    "customer": [
+        {
+            "name": "Jack",
+            "id": 11,
+            "share": 8,
+            "time": "11:25:58 GMT+0530 (IST)"
+        },
+        {
+            "name": "Jhon",
+            "id": 22,
+            "share": 20
+        },
+        {
+            "name": "Tom",
+            "id": 33,
+            "share": 9
+        },
+        {
+            "name": "Hulk",
+            "id": 44,
+            "share": 25
+        },
+        {
+            "name": "DeadPool",
+            "id": 35,
+            "share": 10,
+            "time": "11:27:56 GMT+0530 (IST)"
+        },
+        {
+            "name": "Avatar",
+            "id": 1,
+            "share": 46
+        },
+        {
+            "name": "brand",
+            "id": 10,
+            "share": 74,
+            "recentTransaction": "11:31:36 GMT+0530 (IST)"
+        },
+        {
+            "name": "zack",
+            "id": 85,
+            "share": 29
+        },
+        {
+            "name": "ven",
+            "id": 78,
+            "share": 14,
+            "time": "11:25:17 GMT+0530 (IST)"
+        },
+        {
+            "name": "boomer",
+            "id": 38,
+            "share": 68
+        },
+        {
+            "name": "garuda",
+            "id": 7,
+            "share": 94,
+            "time": "2019-02-13T07:00:46.520Z",
+            "lastTransaction": "12:32:57 GMT+0530 (IST)",
+            "recentTransaction": "16:35:59 GMT+0530 (IST)"
+        }
+    ]
+}

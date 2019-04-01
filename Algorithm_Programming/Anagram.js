@@ -6,7 +6,6 @@
  *                    a rearrangement of the first. and check anagrams.
  * 
  *  @description    
- * 
  *  @file           : Anagram.js
  *  @overview       : The Two Strings are Anagram or not.
  *  @author         : Satya bhargav<satyabhargav.puli@gmail.com>

@@ -28,7 +28,8 @@ var year = read.questionInt("enter the year :");
 var d = N.dayOfWeek(1, month, year);
 console.log(d);
 var res = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "sat"];
-if (d <= res.length) {
+if (d <= res.length) 
+{
     console.log("The day falls on :" + res[d])
 }
 var days = D.monthof(month);
